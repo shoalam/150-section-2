@@ -1,0 +1,82 @@
+
+/*General Styling*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Services Section*/
+
+.service-section{
+  padding: 80px 0;
+  background: url(../../assets/img/image1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+}
+
+.section-bg-1{
+  border-bottom: 10px solid #B8D231;
+}
+
+.section-bg-1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #042352;
+    width: 55%;
+    height: 100%;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.service-text{
+   padding-right: 50px;
+   color: #fff;
+}
+
+.service-text p{
+   margin: 30px 0;
+}
+
+.section-bg-2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00CCCD;
+    width: 55%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    z-index: -1;
+}
+
+.section-bg-text {
+   padding-left: 50px;
+   padding-right: 0;
+}
+
+.service-section .btn{
+    background: #B8D231;
+    border: none;
+    border-bottom: 2px solid #fff;
+    text-transform: uppercase;
+}
+
+/*Responsive*/
+
+@media(max-width: 767px){
+  .section-bg-1:after, .section-bg-2:after {
+    width: 100%;
+    }
+
+  .service-text h2, .section-bg-text h2{
+    font-size: 29px;
+  }  
+
+}
